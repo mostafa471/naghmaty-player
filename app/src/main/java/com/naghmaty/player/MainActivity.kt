@@ -99,6 +99,7 @@ class MainActivity : Activity(), SongAdapter.Listener {
         for (index in tabs.indices) {
             tabs[index].setOnClickListener { selectTab(index) }
         }
+        tabs[0].setTextColor(getColor(R.color.accent))
 
         findViewById<Button>(R.id.permissionButton).setOnClickListener {
             requestAudioPermission()
@@ -225,13 +226,14 @@ class MainActivity : Activity(), SongAdapter.Listener {
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == REQUEST_AUDIO) {
-            if (hasAudioPermission()) {
-                permissionBlock.visibility = View.GONE
-                loadLibrary()
-            } else {
-               алло(0)
-            }
+        if (requestCode != REQUEST_AUDIO) return
+        if (hasAudioPermission()) {
+            permissionBlock.visibility = View.GONE
+            loadLibrary()
+        } else {
+            permissionBlock.visibility = View.VISIBLE
+            emptyText.visibility = View.GONE
+            Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_LONG).show()
         }
     }
 
@@ -254,7 +256,6 @@ class MainActivity : Activity(), SongAdapter.Listener {
         selectedPlaylistId = null
         query = ""
         searchInput.setText("")
-        actionButton.visibility = if (index == MODE_PLAYLISTS) View.VISIBLE else View.GONE
         for (position in tabs.indices) {
             tabs[position].setTextColor(
                 if (position == index) getColor(R.color.accent) else getColor(R.color.text_secondary)
@@ -485,15 +486,16 @@ class MainActivity : Activity(), SongAdapter.Listener {
             .setView(input)
             .setPositiveButton(R.string.create) { _, _ ->
                 val name = input.text.toString().trim()
-                if (name.isEmpty()) return@setPositiveButton
-                prefs.createPlaylist(name)
-                Toast.makeText(
-                    this,
-                    getString(R.string.playlist_created, name),
-                    Toast.LENGTH_SHORT
-                ).show()
-                mode = MODE_PLAYLISTS
-                render()
+                if (name.isNotEmpty()) {
+                    prefs.createPlaylist(name)
+                    Toast.makeText(
+                        this,
+                        getString(R.string.playlist_created, name),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    mode = MODE_PLAYLISTS
+                    render()
+                }
             }
             .setNegativeButton(R.string.cancel, null)
             .show()
