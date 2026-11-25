@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Naghmaty</string>
+    <string name="header_subtitle">Music from your phone files</string>
+    <string name="search_hint">Search songs, artists or albums</string>
+    <string name="tab_songs">Songs</string>
+    <string name="tab_albums">Albums</string>
+    <string name="tab_artists">Artists</string>
+    <string name="tab_favorites">Favorites</string>
+    <string name="tab_playlists">Playlists</string>
+    <string name="loading">Loading songs…</string>
+    <string name="empty_library">No songs on this device</string>
+    <string name="empty_search">No results for this search</string>
+    <string name="empty_list">This list is empty</string>
+    <string name="no_playlists">No playlists yet, use the new playlist button</string>
+    <string name="song_count">%1$d songs</string>
+    <string name="unknown_album">Unknown album</string>
+    <string name="unknown_artist">Unknown artist</string>
+    <string name="permission_text">To play music from your device the app needs permission to read audio files</string>
+    <string name="permission_button">Allow music access</string>
+    <string name="permission_denied">Without audio permission no song can play</string>
+    <string name="playback_failed">This song could not be played</string>
+    <string name="favorite">Add to favorites</string>
+    <string name="unfavorite">Remove from favorites</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="remove_from_playlist">Remove from playlist</string>
+    <string name="new_playlist">New playlist</string>
+    <string name="playlist_name_hint">Playlist name</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="playlist_created">Playlist %1$s created</string>
+    <string name="added_to_playlist">Added to %1$s</string>
+    <string name="sleep_timer">Sleep timer</string>
+    <string name="sleep_minutes">%1$d minutes</string>
+    <string name="sleep_off">Turn timer off</string>
+    <string name="sleep_set">Timer set to %1$d minutes</string>
+    <string name="nothing_playing">Pick a song</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="close">Close</string>
+    <string name="now_playing">Now playing</string>
+    <string name="channel_name">Music playback</string>
+    <string name="more_options">Options</string>
+    <string name="back">Back</string>
+</resources>

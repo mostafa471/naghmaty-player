@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نغماتي</string>
+    <string name="header_subtitle">موسيقى من ملفات جهازك</string>
+    <string name="search_hint">دوّر على أغنية أو فنان أو ألبوم</string>
+    <string name="tab_songs">أغاني</string>
+    <string name="tab_albums">ألبومات</string>
+    <string name="tab_artists">فنانين</string>
+    <string name="tab_favorites">مفضلة</string>
+    <string name="tab_playlists">قوائم</string>
+    <string name="loading">بيحمّل الأغاني…</string>
+    <string name="empty_library">مفيش أغاني على الجهاز</string>
+    <string name="empty_search">مفيش نتائج للبحث ده</string>
+    <string name="empty_list">القائمة فاضية</string>
+    <string name="no_playlists">مفيش قوائم تشغيل لسه، اضغط زر قائمة تشغيل جديدة</string>
+    <string name="song_count">%1$d أغنية</string>
+    <string name="unknown_album">ألبوم غير معروف</string>
+    <string name="unknown_artist">فنان غير معروف</string>
+    <string name="permission_text">عشان أقدر أشغّل الموسيقى من على جهازك، محتاج إذن قراءة ملفات الصوت</string>
+    <string name="permission_button">اسمح بالوصول للموسيقى</string>
+    <string name="permission_denied">من غير إذن الصوت مفيش أغاني تتشغّل</string>
+    <string name="playback_failed">مش قادر أشغّل الأغنية دي</string>
+    <string name="favorite">ضيف للمفضلة</string>
+    <string name="unfavorite">شيل من المفضلة</string>
+    <string name="add_to_playlist">ضيف لقائمة تشغيل</string>
+    <string name="remove_from_playlist">شيل من القائمة</string>
+    <string name="new_playlist">قائمة تشغيل جديدة</string>
+    <string name="playlist_name_hint">اسم القائمة</string>
+    <string name="create">إنشاء</string>
+    <string name="cancel">إلغاء</string>
+    <string name="playlist_created">اتعملت قائمة %1$s</string>
+    <string name="added_to_playlist">اتضافت لقائمة %1$s</string>
+    <string name="sleep_timer">مؤقت النوم</string>
+    <string name="sleep_minutes">%1$d دقيقة</string>
+    <string name="sleep_off">إيقاف المؤقت</string>
+    <string name="sleep_set">المؤقت على %1$d دقيقة</string>
+    <string name="nothing_playing">اختار أغنية</string>
+    <string name="play">تشغيل</string>
+    <string name="pause">إيقاف</string>
+    <string name="next">التالي</string>
+    <string name="previous">السابق</string>
+    <string name="close">قفل</string>
+    <string name="now_playing">اللي بيتشغّل</string>
+    <string name="channel_name">تشغيل الموسيقى</string>
+    <string name="more_options">خيارات</string>
+    <string name="back">رجوع</string>
+</resources>
