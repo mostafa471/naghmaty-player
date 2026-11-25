@@ -96,7 +96,8 @@ class PlayerService : Service() {
     override fun onBind(intent: Intent?): IBinder? = null
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        val action = intent?.action
+        if (intent == null) return START_NOT_STICKY
+        val action = intent.action
         when (action) {
             ACTION_PLAY -> {
                 val ids = intent.getLongArrayExtra(EXTRA_IDS)
@@ -151,8 +152,8 @@ class PlayerService : Service() {
 
     private fun startQueue(ids: LongArray, index: Int) {
         val known = ArrayList<Long>()
-        for (id in ids) {
-            if (songMap.containsKey(id)) known.add(id)
+        for (songId in ids) {
+            if (songMap.containsKey(songId)) known.add(songId)
         }
         if (known.isEmpty()) {
             for (song in MusicLibrary.loadSongs(this)) {
