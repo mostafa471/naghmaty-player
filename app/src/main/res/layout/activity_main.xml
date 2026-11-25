@@ -53,27 +53,27 @@
 
         <TextView
             android:id="@+id/tabSongs"
-            style="@style/Naghmaty.Tab"
+            style="@style/NaghmatyTab"
             android:text="@string/tab_songs" />
 
         <TextView
             android:id="@+id/tabAlbums"
-            style="@style/Naghmaty.Tab"
+            style="@style/NaghmatyTab"
             android:text="@string/tab_albums" />
 
         <TextView
             android:id="@+id/tabArtists"
-            style="@style/Naghmaty.Tab"
+            style="@style/NaghmatyTab"
             android:text="@string/tab_artists" />
 
         <TextView
             android:id="@+id/tabFavorites"
-            style="@style/Naghmaty.Tab"
+            style="@style/NaghmatyTab"
             android:text="@string/tab_favorites" />
 
         <TextView
             android:id="@+id/tabPlaylists"
-            style="@style/Naghmaty.Tab"
+            style="@style/NaghmatyTab"
             android:text="@string/tab_playlists" />
     </LinearLayout>
 
